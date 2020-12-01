@@ -20,3 +20,8 @@ JPA Entities
 1. Add entities Author and Book.
 2. Establish many-to-many relationship: `@ManyToMany, @JoinTable, @JoinColumn`.
 3. Add equals/hashCode methods (by id field).
+
+Repositories
+------------
+1. Add repository interfaces for entities: `EntityRepository extends CrudRepository<ValueType, IdType>`. 
+2. Add class BootstrapData which implements org.springframework.boot.CommandLineRunner
