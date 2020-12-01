@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Entity
 public class Author {
@@ -68,8 +69,12 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
+                ", books=" + booksTitles() +
                 '}';
+    }
+
+    private String booksTitles() {
+        return books.stream().map(b -> "\"" + b.getTitle() + "\"").collect(Collectors.joining(","));
     }
 
     @Override
