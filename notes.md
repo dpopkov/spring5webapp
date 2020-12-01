@@ -1,6 +1,12 @@
 Notes on the project
 ====================
 
+4 - Enable H2 Console
+---------------------
+1. Add to application.properties `spring.h2.console.enabled=true`.
+2. Open in browser: `http://localhost:8080/h2-console`.
+3. Connect to database: `jdbc:h2:mem:testdb`.
+
 3 - Add Publisher
 -----------------
 1. Add Publisher entity.
