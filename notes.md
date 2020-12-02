@@ -1,6 +1,12 @@
 Notes on the project
 ====================
 
+5 - Spring MVC + Thymeleaf
+--------------------------
+1. Add and configure Spring MVC Controller: annotate with @Controller, map methods with @RequestMapping
+2. Add Thymeleaf Spring Boot starter dependency: `spring-boot-starter-thymeleaf`
+3. Add Thymeleaf templates, use `th:each` and `th:text` attributes.
+
 4 - Enable H2 Console
 ---------------------
 1. Add to application.properties `spring.h2.console.enabled=true`.
